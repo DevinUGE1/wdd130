@@ -1,16 +1,36 @@
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+    --color-primary: rgb(111, 184, 233);
+    --color-link: rgb(7, 4, 6);
+    --color-aside-bg: rgb(75, 168, 140);
+    --color-aside-text: rgb(19, 20, 20);
+    --border-light: 1px solid rgb(0 0 0 / 0.2);
+    --border-black: 1px solid black;
+    --shadow-default: 0 0 30px gray;
+    --img-width-main: 150px;
+    --img-width-aside: 200px;
+    --background-footer: rgba(212, 53, 159, 0.2);
+}
+
+
+
 nav{
-    background-color: rgb(111, 184, 233);
+    background-color: var(--color-primary);
     padding: 10px;
 }
 
 nav a{
-    color: rgb(7, 4, 6);
+    color: var(--color-link);
     display: block;
     padding: 20px;
 }
 
 h1{
-    color: rgb(111, 184, 233);
+    color: var(--color-primary);
 }
 
 main{
@@ -21,29 +41,29 @@ main{
 aside{
     width: auto;
     margin: auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: rgb(75, 168, 140);
-    color: rgb(19, 20, 20);
+    border: var(--border-light);
+    padding: var(--padding);
+    background-color: var(--color-aside-bg);
+    color: var(--color-aside-text);
     text-align: center;
 }
 
 aside img{
-    width: 200px;
+    width: var(--img-width-aside);
     height: auto;
 }
 
 main img{
-    width: 150px;
+    width: var(--img-width-main);
     height: auto;
 }
 
 img{
-    width: 150px;
+    width: var(--img-width-main);
     height: auto;
-    border: 1px solid black;
+    border: var(--border-black);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--shadow-default);
 }
 
 p{
@@ -54,4 +74,12 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+.note {
+    font-style: italic;
+    font-weight: bold;
+    /*color: navy;*/
+    color: var(--color-aside-text);
+    background: var(--background-footer);
 }
