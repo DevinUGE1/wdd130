@@ -6,7 +6,7 @@
 	background-color: #247;
 	color: #fff;
 }
-
+/*Style div callout img*/
 .callout img {
 	float: right;
 	margin: 0 0 10px 15px;
@@ -15,6 +15,12 @@
 	background-color: #bbb;
 	width: 100px;
 	height: auto;
+}
+
+img {
+	width: 100%;
+	height: auto; /*100%;*/
+	/*object-fit: cover;*/
 }
 
 blockquote {
