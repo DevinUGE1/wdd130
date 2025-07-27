@@ -13,6 +13,10 @@ header {
   color: var(--accent2-color);
 }
 
+header nav a {
+  text-decoration: none;
+}
+
 body header img{
   margin: 20px;
   width: 200px;
@@ -81,11 +85,10 @@ h1 {
   color: #fff;
 }
 
-.hero article img{
-  position: absolute;
-  top: 10px;
-  float: left;
-  width: 120px;
+
+.hero article img {
+    width: 125px;
+    float: right;
 }
 
 footer img {
