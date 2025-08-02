@@ -149,6 +149,7 @@ nav, p, section, article{
 }
 
 footer {
+  margin: 1rem auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,13 +158,124 @@ footer {
   background-color: var(--accent2-color);
 }
 
+footer p {
+    margin: 0;
+}
+
+footer a {
+  color: var(--accent1-color);
+}
+
 footer .socialmedia {
   display: flex;
   gap: 10px;
 }
 
 footer img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
+/*Contact Information*/
+
+.contact-info {
+  text-align: center;
+  display: grid;
+}
+
+.contact-info a {
+  color: var(--accent1-color);; 
+  text-decoration: none; 
+  /*font-weight: bold;*/
+}
+
+.map iframe {
+  border:0;
+}
+
+/*Our Team*/
+.team h2 {
+  text-align: center;
+}
+
+.adventure-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.adventure-team figure {
+  text-align: center;
+}
+
+.adventure-team img {
+  width: 100%;
+  height: auto;
+}
+
+/*Form of Contact*/
+.contact-form h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+  text-align: left;
+  padding-right: 1rem;
+  /*padding: 12px 12px 12px 0;
+  display: inline-block;*/
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkcyan;
+}
