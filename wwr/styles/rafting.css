@@ -444,6 +444,7 @@ main .hero-trips h1 {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .trips-services {
@@ -451,10 +452,6 @@ main .hero-trips h1 {
   background-color: #d8edf7;
   padding: 2rem;
   text-align: center; 
-}
-
-.trips-services h2 {
-  margin-bottom: 2rem;
 }
 
 .trips-options {
