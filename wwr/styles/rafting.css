@@ -361,7 +361,7 @@ main .hero-home h1 {
   background-color: var(--secundary-color);
   padding: 2rem;
   border-radius: 8px;
-  /*box-shadow: 0 0 30px rgba(22, 207, 22, 0.1);*/
+  box-shadow: 0 0 30px rgba(22, 207, 22, 0.1);
   max-width: 770px;
   margin: 2rem auto; 
   text-align: center;
@@ -402,4 +402,145 @@ main .hero-home h1 {
 
 .home-newsletter-form button:hover {
   background-color: var(--accent2-color);
+}
+
+/*Trips*/
+
+.hero-trips {
+  position: relative;
+}
+
+main .hero-trips h1 {
+  font-family: var(--heading-font);
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  color: var(--title-option);
+}
+
+.hero-trips img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.button-hero-trips {
+  position: absolute;
+  top: 80px;
+  left: 350px;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.trips-services h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.trips-services {
+  margin-top: 2rem;
+  background-color: #d8edf7;
+  padding: 2rem;
+  text-align: center; 
+}
+
+.trips-services h2 {
+  margin-bottom: 2rem;
+}
+
+.trips-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.trips-option {
+  background-color: var(--title-option);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.trips-option:hover {
+  transform: scale(1.02);
+}
+
+.trips-option img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block; 
+}
+
+.trips-content {
+  padding: 1rem;
+}
+
+/*trips-table*/
+
+.trips-table {
+  margin: 3rem auto;
+  max-width: auto;
+  padding: 0 1rem;
+}
+
+.trips-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--primary-color); 
+  background-color: #d8edf7;
+}
+
+.trips-table-price {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--body-font), var(--heading-font);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.trips-table-price thead {
+  background-color: var(--primary-color); 
+  color: var(--title-option);
+}
+
+.trips-table-price th,
+.trips-table-price td {
+  padding: 0.9rem 1rem;
+  text-align: center;
+}
+
+.trips-table-price tbody tr:hover {
+  background-color: var(--secondary-color); 
+  cursor: pointer;
+}
+
+.trips-table-price th {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.trips-table-price td {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .trips-table-price th, .trips-table-price td {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
 }
